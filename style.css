@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f0ff;
+
+  font-family: Arial, sans-serif;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+/* GÓRNE TŁO */
+
+.top-bg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 300px;
+
+  background: #2f1533;
+}
+
+/* KARTA */
+
+.card {
+  position: relative;
+
+  background: white;
+
+  width: 90%;
+  max-width: 550px;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+
+  z-index: 2;
+}
+
+/* TYTUŁ */
+
+.title {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.star {
+  color: #ad28eb;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #2f1533;
+}
+
+/* FAQ */
+
+.faq {
+  border-bottom: 1px solid #eee;
+
+  padding: 20px 0;
+}
+
+.question {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: none;
+  border: none;
+
+  text-align: left;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  color: #2f1533;
+
+  transition: 0.3s;
+}
+
+.question:hover {
+  color: #ad28eb;
+}
+
+.question:focus {
+  outline: 2px solid #ad28eb;
+  outline-offset: 5px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #ad28eb;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+/* ODPOWIEDZI */
+
+.answer {
+  display: none;
+
+  margin-top: 15px;
+
+  color: #8b6990;
+
+  line-height: 1.7;
+}
+
+.answer.show {
+  display: block;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+}
